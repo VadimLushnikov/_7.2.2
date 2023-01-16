@@ -1,10 +1,12 @@
 package org.example.servlet;
 
 import com.google.gson.Gson;
+import org.example.config.JavaConfig;
 import org.example.model.Post;
 import org.example.model.controller.PostController;
 import org.example.repository.PostRepository;
 import org.example.service.PostService;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,9 +19,17 @@ public class MainServlet extends HttpServlet {
 
   @Override
   public void init() {
-    final var repository = new PostRepository();
-    final var service = new PostService(repository);
-    controller = new PostController(service);
+    // отдаём список пакетов, в которых нужно искать аннотированные классы
+    final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
+    // получаем по имени бина
+    controller = (PostController) context.getBean("postController");
+    // получаем по классу бина
+    final var service = context.getBean(PostService.class);
+    final var repository = context.getBean(PostRepository.class);
+
+    //final var repository = new PostRepository();
+    //final var service = new PostService(repository);
+    //controller = new PostController(service);
   }
 
   @Override

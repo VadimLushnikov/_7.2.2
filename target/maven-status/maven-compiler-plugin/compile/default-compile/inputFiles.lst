@@ -1,6 +1,6 @@
-C:\Users\ASUS\IdeaProjects\_7.2.1\src\main\java\org\example\repository\PostRepository.java
-C:\Users\ASUS\IdeaProjects\_7.2.1\src\main\java\org\example\service\PostService.java
-C:\Users\ASUS\IdeaProjects\_7.2.1\src\main\java\org\example\model\Post.java
-C:\Users\ASUS\IdeaProjects\_7.2.1\src\main\java\org\example\servlet\MainServlet.java
-C:\Users\ASUS\IdeaProjects\_7.2.1\src\main\java\org\example\exception\NotFoundException.java
-C:\Users\ASUS\IdeaProjects\_7.2.1\src\main\java\org\example\model\controller\PostController.java
+C:\Users\ASUS\IdeaProjects\_7.2.2\src\main\java\org\example\service\PostService.java
+C:\Users\ASUS\IdeaProjects\_7.2.2\src\main\java\org\example\servlet\MainServlet.java
+C:\Users\ASUS\IdeaProjects\_7.2.2\src\main\java\org\example\exception\NotFoundException.java
+C:\Users\ASUS\IdeaProjects\_7.2.2\src\main\java\org\example\repository\PostRepository.java
+C:\Users\ASUS\IdeaProjects\_7.2.2\src\main\java\org\example\model\Post.java
+C:\Users\ASUS\IdeaProjects\_7.2.2\src\main\java\org\example\model\controller\PostController.java
