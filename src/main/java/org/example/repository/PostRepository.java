@@ -1,12 +1,14 @@
 package org.example.repository;
 
 import org.example.model.Post;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 // Stub
+@Repository
 public class PostRepository {
   ConcurrentSkipListMap<Long,Post> listSetPost = new ConcurrentSkipListMap();
   public volatile long count = 0;
