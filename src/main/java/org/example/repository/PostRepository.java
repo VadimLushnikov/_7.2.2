@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 // Stub
-@Repository
+//@Repository
 public class PostRepository {
   ConcurrentSkipListMap<Long,Post> listSetPost = new ConcurrentSkipListMap();
   public volatile long count = 0;

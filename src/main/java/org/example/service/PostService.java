@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentSkipListMap;
 
-@Service
+//@Service
 public class PostService {
   private final PostRepository repository;
 

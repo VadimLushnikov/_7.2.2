@@ -1,6 +1,7 @@
 package org.example.servlet;
 
 import com.google.gson.Gson;
+import org.example.config.JavaConfig;
 import org.example.model.Post;
 import org.example.model.controller.PostController;
 import org.example.repository.PostRepository;
@@ -19,7 +20,7 @@ public class MainServlet extends HttpServlet {
   @Override
   public void init() {
     // отдаём список пакетов, в которых нужно искать аннотированные классы
-    final var context = new AnnotationConfigApplicationContext("org.example");
+    final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
     // получаем по имени бина
     controller = (PostController) context.getBean("postController");
     // получаем по классу бина
